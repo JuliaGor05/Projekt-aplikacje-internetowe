@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AltFCztery - Moje Ulubione Gry Komputerowe</title>
+    <!-- Główne style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAGŁÓWEK I NAWIGACJA -->
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="#" class="logo">AltF<span>Cztery</span></a>
+
+        <nav class="main-nav" id="mainNav">
+          <ul class="nav-list">
+            <li><a href="#hero" class="nav-link">Start</a></li>
+            <li><a href="#games" class="nav-link">Gry</a></li>
+            <li><a href="#gallery" class="nav-link">Galeria</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+            <li><a href="#contact" class="nav-link">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <!-- Przełącznik motywu ciemnego -->
+          <button
+            id="themeToggle"
+            class="btn-icon"
+            aria-label="Przełącz motyw"
+            title="Zmień motyw"
+          >
+            🌙
+          </button>
+
+          <!-- Hamburger menu mobilne -->
+          <button
+            id="hamburgerBtn"
+            class="btn-hamburger"
+            aria-label="Otwórz menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- BANER GŁÓWNY (HERO) -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-content">
+        <h1>Moje Ulubione Gry Komputerowe</h1>
+        <p>
+          Witaj w świecie gier komputerowych! Gaming to jedno z moich
+          największych hobby. Uwielbiam zarówno wciągające gry z głęboką fabułą,
+          jak i dynamiczne wyścigi, mroczne survival horrory oraz rywalizację w
+          grach sieciowych. Oto zestawienie tytułów, w które grałam i które
+          wywarły na mnie największe wrażenie.
+        </p>
+        <a href="#games" class="btn btn-primary">Zobacz Moje Ulubione Tytuły</a>
+      </div>
+    </section>
+
+    <!-- SEKCJA GŁÓWNA: KARTY GIER -->
+    <main>
+      <section id="games" class="games-section container">
+        <h2 class="section-title">Gry, do Których Chętnie Wracam</h2>
+
+        <div class="games-grid">
+          <!-- Wiedźmin 3 -->
+          <article class="game-card">
+            <img
+              src="assets/images/wiedzmin3okladka2.png"
+              alt="Wiedźmin 3 - Okładka gry"
+              class="game-img"
+            />
+            <div class="game-info">
+              <span class="badge">RPG / Otwarty Świat</span>
+              <h3>The Witcher 3: Wild Hunt</h3>
+              <p class="game-desc">
+                Jedna z najlepszych gier RPG w historii. Urzekła mnie
+                niesamowitym klimatem, słowiańskim folklorem oraz kapitalnie
+                napisanymi zadaniami pobocznymi. Historia Geralta z Rivii
+                poszukującego Ciri trzyma w napięciu do samego końca, a dbałość
+                o detale świata przedstawionego zachwyca za każdym razem.
+              </p>
+              <div class="game-footer">
+                <span class="rating">⭐ 10 / 10</span>
+                <a
+                  href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-link"
+                  >Zobacz na Steam &rarr;</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Cyberpunk 2077 -->
+          <article class="game-card">
+            <img
+              src="assets/images/cyberpunkokladka.webp"
+              alt="Cyberpunk 2077 - Okładka gry"
+              class="game-img"
+            />
+            <div class="game-info">
+              <span class="badge">Sci-Fi / Action RPG</span>
+              <h3>Cyberpunk 2077</h3>
+              <p class="game-desc">
+                Night City wciąga swoim niepowtarzalnym, neonowym klimatem i
+                niesamowitym projektem miasta. Gra urzekła mnie głęboką historią
+                V, dojrzałymi relacjami z postaciami (jak Johnny Silverhand czy
+                Judy) oraz fantastyczną ścieżką dźwiękową, która idealnie buduje
+                atmosferę mrocznej przyszłości.
+              </p>
+              <div class="game-footer">
+                <span class="rating">⭐ 9.5 / 10</span>
+                <a
+                  href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-link"
+                  >Zobacz na Steam &rarr;</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Forza Horizon 5 -->
+          <article class="game-card">
+            <img
+              src="assets/images/Forzaokladka.webp"
+              alt="Forza Horizon 5 - Okładka gry"
+              class="game-img"
+            />
+            <div class="game-info">
+              <span class="badge">Wyścigi / Otwarty Świat</span>
+              <h3>Forza Horizon 5</h3>
+              <p class="game-desc">
+                Doskonały sposób na relaks i poczucie absolutnej swobody. Gra
+                oferuje przepiękny, otwarty świat inspirowany Meksykiem, setki
+                samochodów oraz genialny model jazdy, który idealnie łączy
+                zręcznościową zabawę z przyjemnym uczuciem prowadzenia potężnych
+                maszyn.
+              </p>
+              <div class="game-footer">
+                <span class="rating">⭐ 9.0 / 10</span>
+                <a
+                  href="https://store.steampowered.com/app/1551360/Forza_Horizon_5/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-link"
+                  >Zobacz na Steam &rarr;</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Resident Evil 2 -->
+          <article class="game-card">
+            <img
+              src="assets/images/residentokladka.jpg"
+              alt="Resident Evil 2 - Okładka gry"
+              class="game-img"
+            />
+            <div class="game-info">
+              <span class="badge">Survival Horror</span>
+              <h3>Resident Evil 2 (Remake)</h3>
+              <p class="game-desc">
+                Genialnie zrealizowany remake klasyka survival horroru. Mroczna,
+                duszna atmosfera posterunku policji w Raccoon City, ciągły brak
+                amunicji oraz nieustannie depczący po piętach Pan X (Mr. X)
+                sprawiają, że gra trzyma w ogromnym napięciu i dostarcza mocnych
+                wrażeń.
+              </p>
+              <div class="game-footer">
+                <span class="rating">⭐ 9.2 / 10</span>
+                <a
+                  href="https://store.steampowered.com/app/883710/Resident_Evil_2/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-link"
+                  >Zobacz na Steam &rarr;</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Devil May Cry 5 -->
+          <article class="game-card">
+            <img
+              src="assets/images/dmcokladka.jpg"
+              alt="Devil May Cry 5 - Okładka gry"
+              class="game-img"
+            />
+            <div class="game-info">
+              <span class="badge">Slasher / Akcja</span>
+              <h3>Devil May Cry 5</h3>
+              <p class="game-desc">
+                Czysta, efekciarska akcja i czysta frajda z rozgrywki. Gra
+                charakteryzuje się niezwykle rozbudowanym i satysfakcjonującym
+                systemem walki, charyzmatycznymi bohaterami (Dante, Nero, V)
+                oraz świetną oprawą muzyczną, która wyznacza tempo każdej
+                pojedynki.
+              </p>
+              <div class="game-footer">
+                <span class="rating">⭐ 8.8 / 10</span>
+                <a
+                  href="https://store.steampowered.com/app/601150/Devil_May_Cry_5/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-link"
+                  >Zobacz na Steam &rarr;</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- League of Legends -->
+          <article class="game-card">
+            <img
+              src="assets/images/lolokladka.jpg"
+              alt="League of Legends - Okładka gry"
+              class="game-img"
+            />
+            <div class="game-info">
+              <span class="badge">MOBA / Esport</span>
+              <h3>League of Legends</h3>
+              <p class="game-desc">
+                Tytuł, przy którym spędziłam setki godzin. Choć rywalizacja w
+                sieci potrafi być wymagająca, to ogromna różnorodność bohaterów,
+                praca zespołowa i satysfakcja ze wspólnych wygranych ze
+                znajomymi sprawiają, że regularnie wracam na Summoner's Rift.
+              </p>
+              <div class="game-footer">
+                <span class="rating">⭐ 8.5 / 10</span>
+                <a
+                  href="https://www.leagueoflegends.com/pl-pl/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn-link"
+                  >Strona Gry &rarr;</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SEKCJA GALERII -->
+      <section id="gallery" class="gallery-section container">
+        <h2 class="section-title">Galeria Zrzutów Ekranu</h2>
+        <p class="section-subtitle">
+          Moje ulubione ujęcia i momenty z gier. Kliknij zdjęcie, aby je
+          powiększyć.
+        </p>
+
+        <div class="gallery-grid">
+          <img
+            src="assets/images/wiedzmin_screen.webp"
+            alt="Wiedźmin 3 - Geralt w Nowigradzie"
+            class="gallery-thumb"
+            data-full="assets/images/wiedzmin_screen.webp"
+          />
+          <img
+            src="assets/images/cyberpunk_screen.jpg"
+            alt="Cyberpunk 2077 - widok na Night City"
+            class="gallery-thumb"
+            data-full="assets/images/cyberpunk_screen.jpg"
+          />
+          <img
+            src="assets/images/forza_screen.webp"
+            alt="Forza Horizon 5 - wyścig"
+            class="gallery-thumb"
+            data-full="assets/images/forza_screen.webp"
+          />
+          <img
+            src="assets/images/re2_screen.jpg"
+            alt="Resident Evil 2 - korytarze posterunku pełne zombie"
+            class="gallery-thumb"
+            data-full="assets/images/re2_screen.jpg"
+          />
+          <img
+            src="assets/images/dmc_screen.jpg"
+            alt="Devil May Cry 5 - walka z bossem"
+            class="gallery-thumb"
+            data-full="assets/images/dmc_screen"
+          />
+          <img
+            src="assets/images/lol_screen.webp"
+            alt="League of Legends - widok z gry"
+            class="gallery-thumb"
+            data-full="assets/images/lol_screen.webp"
+          />
+        </div>
+      </section>
+
+      <!-- Modal powiększonego zdjęcia (Lightbox) -->
+      <div id="imageModal" class="modal" aria-hidden="true">
+        <button id="modalClose" class="modal-close" aria-label="Zamknij okno">
+          &times;
+        </button>
+        <img id="modalImg" src="" alt="Powiększony zrzut ekranu" />
+        <div id="modalCaption" class="modal-caption"></div>
+      </div>
+
+      <!-- SEKCJA FAQ -->
+      <section id="faq" class="faq-section container">
+        <h2 class="section-title">Pytania o Gry (FAQ)</h2>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Dlaczego akurat Wiedźmin 3 to moja ulubiona gra?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Przede wszystkim ze względu na klimat i dojrzałą fabułę. Wybory
+                moralne nie są tu czarno-białe, a postaci mają swoje
+                realistyczne motywacje. Dodatkowo muzyka w grze jest absolutnym
+                arcydziełem.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span
+                >Czy gra w Resident Evil 2 wymaga znajomości pierwszej
+                części?</span
+              >
+              <span class="icon">+</span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Zdecydowanie nie! Historia Leona i Claire w Resident Evil 2
+                Remake stanowi zamkniętą całość i jest świetnym punktem wejścia
+                dla każdego, kto chce zacząć przygodę z serią survival horrorów.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span
+                >Czy do gry w Forza Horizon 5 potrzebna jest kierownica?</span
+              >
+              <span class="icon">+</span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Nie, gra została stworzona z myślą o zabawie na padzie lub
+                klawiaturze. Sterowanie jest bardzo intuicyjne i daje mnóstwo
+                frajdy bez konieczności kupowania drogiego sprzętu.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Na jakich platformach najczęściej gram?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Najwięcej czasu spędzam na komputerze osobistym (PC), który daje
+                największe możliwości dostosowania ustawień graficznych, ale
+                cenię też wygodę grania na konsoli.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEKCJA KONTAKTOWA Z WALIDACJĄ FORMULARZA -->
+      <section id="contact" class="contact-section container">
+        <h2 class="section-title">Napisz do Mnie</h2>
+        <p class="section-subtitle">
+          Masz podobny gust do gier, chcesz o coś zapytać albo zagrać razem w
+          LoL-a? Wyślij mi wiadomość!
+        </p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="userName">Twoje Imię lub Nick:</label>
+            <input
+              type="text"
+              id="userName"
+              name="userName"
+              required
+              placeholder="np. Ania / Gamer99"
+            />
+            <span class="error-msg" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="userEmail">Twój Adres E-mail:</label>
+            <input
+              type="email"
+              id="userEmail"
+              name="userEmail"
+              required
+              placeholder="np. jan@example.com"
+            />
+            <span class="error-msg" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="userMessage">Wiadomość:</label>
+            <textarea
+              id="userMessage"
+              name="userMessage"
+              rows="4"
+              required
+              placeholder="Napisz coś od siebie..."
+            ></textarea>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            Wyślij wiadomość
+          </button>
+          <div id="formStatus" class="form-status"></div>
+        </form>
+      </section>
+    </main>
+
+    <!-- STOPKA -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>
+          &copy; 2026 AltFCztery. Projekt z przedmiotu Aplikacje Internetowe.
+        </p>
+        <p>Strona stworzona z pasji do gier komputerowych.</p>
+      </div>
+    </footer>
+
+    <!-- Przycisk powrotu na górę -->
+    <button
+      id="scrollTopBtn"
+      class="scroll-top-btn"
+      aria-label="Powrót na górę strony"
+    >
+      &uarr;
+    </button>
+
+    <!-- Skrypt JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
